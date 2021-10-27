@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:400,300,700');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist');
+
+body {
+  font-family: Montserrat;
+  background: black;
+  color:white;
+  font-family: "Urbanist"
+}
+a {
+  text-decoration:none;
+  color:black;
+  cursor:pointer;
+}
+h1 {
+  font-size: 45px;
+  /* font-weight: 700; */
+  font-family:"Permanent Marker";
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.list-inline {
+  list-style: none;
+  padding: 0;
+  margin:0;
+  color:black;
+}
+
+.list-inline > li {
+  transition: 0.5s linear;
+  display: inline-block;
+  padding: 0 15px 5px;
+  font-size:20px;
+}
+li:hover {
+  transform: scale(1.15);
+}
+.card-basic {
+  padding: 25px;
+  margin:20px 20%;
+  text-align:center;
+  border-radius: 30px;
+}
+
+
+.img-round {
+  border-radius:30%;
+  height: 300px;
+  width: 350px;
+  margin:20px;
+  filter: invert(1);
+}
+@media (max-width:500px)
+{
+  .card-basic {
+    width:300px;
+  }
+  .img-round{
+    width:200px;
+    height:200px;
+  }
+}
+.background{
+  background-color: #ff44cc;
+  padding:10px;
+  border-radius:30px;
+  box-shadow: 0px 0px 3px 5px#ff44cc;
+  box-shadow: 0px 0px 2px 0px#ff44cc;
+  box-shadow: 0px 0px 4px 5px#ff44cc;
+  box-shadow: 0px 0px 5px 10px#ff44cc;
+  box-shadow: 0px 0px 10px 15px#ff44cc;
+  box-shadow: 0px 0px 20px 15px#ff44cc;
+}
+
+.card-text-content {
+  text-align: left;
+  padding:0;
+  margin: 0 20px;
+  line-height: 20px;
+  opacity:1;
+  text-shadow: 1px 1px 2px  white;
+
+}
+
+.btn-fun {
+  height:50px;
+  background:transparent;
+  border-radius: 10px;
+  padding: 10px;
+  border:2px solid #ff44cc;
+  color:#ff44cc;
+  font-size:700;
+  transition: 1s linear;
+}
+
+.btn-fun:hover {
+  transform:scale(1.1);
+  box-shadow: 2px 6px 10px 4px#ff44cc;
+  text-shadow: 2px 2px 8px #ff44cc ;
+}
+
+.falafel{
+  margin:30px 0 0;
+  padding: 20px;
+  text-align:left;
+}
+
+.falafel img {
+  animation-name: hophop;
+  animation-duration:3s;
+  animation-iteration-count:infinite;
+}
+
+.shadow {
+  display: block;
+  height: 2px;
+  width: 85px;
+  /* border-bottom: 2px solid #ff44cc; */
+  background: transparent;
+  box-shadow: 10px 10px 5px #ff44cc, 10px 10px 15px #ff44cc,
+    10px 10px 20px #ff44cc, 10px 10px 25px #ff44cc, 10px 10px 10px #ff44cc;
+  animation: hophop 3s infinite;
+}
+
+@keyframes hophop {
+  100% {transform: translateX( calc(80vw - 250px))
+}}
